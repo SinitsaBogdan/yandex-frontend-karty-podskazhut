@@ -14,7 +14,8 @@
 		"checkAll": "npm run check && npm run lint",
 		"fixAll": "npm run format && npm run lintfix",
         "build": "gulp build",
-		"dev": "gulp"
+		"dev": "gulp",
+		"instal-library": "npm install prettier autoprefixer html-minifier cssnano postcss postcss-combine-media-query gulp gulp-postcss gulp-plumber gulp-concat-css"
 
 	},
 	"repository": {
