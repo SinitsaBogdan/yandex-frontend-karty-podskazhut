@@ -23,6 +23,7 @@
 
 .content__text_block {
     font-size: 18px;
+    text-align: justify;
 }
 
 .content__text_block .content__paragraph:not(:last-of-type) {
@@ -35,7 +36,7 @@
 
 .content__blockquote {
     inline-size: 75%;
-    margin: 0 auto 1.5rem;
+    margin: 1rem auto 1.5rem 10%;
     font-style: italic;
     line-height: 2;
 }
