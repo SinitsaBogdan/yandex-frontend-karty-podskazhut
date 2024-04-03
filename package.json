@@ -1,0 +1,78 @@
+{
+	"name": "app-travel-platform",
+	"version": "1.0.0",
+	"description": "Агрегатор туристических путевок",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo Привет!",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"lint": "stylelint '**/*.{css,scss}'",
+		"lintfix": "stylelint '**/*.{css,scss}' --fix",
+		"check": "prettier --check './**/*.{html,css,js,jsx,scss}'",
+		"format": "prettier --write './**/*.{html,css,js,jsx,scss}'",
+		"checkAll": "npm run check && npm run lint",
+		"fixAll": "npm run format && npm run lintfix",
+        "build": "gulp build",
+		"dev": "gulp"
+
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SinitsaBogdan/app-travel-platform.git"
+	},
+	"author": "Синица Богдан [ ABSTRACT ]",
+	"license": "ISC",
+	"homepage": "https://github.com/SinitsaBogdan/template-frontend#readme",
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"classnames": "^2.5.1",
+		"prop-types": "^15.8.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-scripts": "5.0.1",
+		"react-to-print": "^2.14.15",
+		"sass": "^1.70.0",
+		"uimini": "^2.0.8",
+		"web-vitals": "^2.1.4",
+		"prettier": "^3.2.5",
+		"stylelint": "^16.2.1"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			"last 2 versions",
+			"not dead",
+			"not ie <= 11",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.19",
+		"browser-sync": "^3.0.2",
+		"cssnano": "^6.1.2",
+		"del": "^6.0.0",
+		"eslint-plugin-react": "^7.33.2",
+		"gh-pages": "^6.1.1",
+		"gulp": "^5.0.0",
+		"gulp-concat-css": "^3.1.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^10.0.0",
+		"html-minifier": "^4.0.0",
+		"postcss": "^8.4.38",
+		"postcss-combine-media-query": "^1.0.1",
+		"styled-components": "^6.1.8"
+	}
+}
