@@ -1,0 +1,13 @@
+:root {
+    --main-font: raleway;
+    --accent-font: 'STIX Two Text';
+    --bg-color: #f3efec;
+    --text-color: #312a4e;
+    --accent-color: #ffab6b;
+}
+
+.theme_dark {
+    --bg-color: #171717;
+    --text-color: #b3b3b3;
+    --accent-color: transparent;
+}

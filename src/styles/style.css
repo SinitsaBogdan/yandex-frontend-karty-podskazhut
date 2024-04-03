@@ -1,0 +1,141 @@
+.header {
+    padding-block-start: 10%;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-block-start: 1px solid currentColor;
+    border-block-end: 1px solid currentColor;
+    padding-block: 20px;
+}
+
+.header__title {
+    margin-block-end: 40px;
+    font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+.content__title {
+    margin: 7% 0 2.5%;
+    font-size: 30px;
+}
+
+.content__text_block {
+    font-size: 18px;
+}
+
+.content__text_block .content__paragraph:not(:last-of-type) {
+    margin-block-end: 1.5em;
+}
+
+.content__text_block a {
+    color: inherit;
+}
+
+.content__blockquote {
+    inline-size: 75%;
+    margin: 0 auto 1.5rem;
+    font-style: italic;
+    line-height: 2;
+}
+
+.content__list {
+    padding: 0 0 0 40px;
+    list-style: none;
+}
+
+.content__list li {
+    position: relative;
+}
+
+.content__list li:not(:last-of-type) {
+    margin-block-end: 10px;
+}
+
+.content__list li::before {
+    content: '';
+    position: absolute;
+    inline-size: 15px;
+    block-size: 15px;
+    margin-block-start: -7.5px;
+    background-image: url('../images/marker-light.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    inset-block-start: 50%;
+    inset-inline-start: -25px;
+}
+
+.content__text_block_type_first__lettered .content__paragraph::first-letter {
+    display: inline-block;
+    margin-inline-end: 1px;
+    padding: 0 4px;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: var(--accent-color);
+}
+
+.content__figure {
+    position: relative;
+    inline-size: calc(100% + 10vi);
+    margin: 7% auto;
+    inset-inline-end: 5vi;
+}
+
+.content__picture {
+    inline-size: 100%;
+}
+
+.content__picture_caption {
+    border-block-end: 1px solid currentColor;
+    padding: 20px;
+    font-style: 18px;
+    text-align: center;
+}
+
+.content__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 7%;
+    border: 1px solid currentColor;
+    aspect-ratio: 4/2;
+}
+
+.content__card_title {
+    font-size: 60px;
+}
+
+.content__card_subtitle {
+    font-size: 18px;
+}
+
+.footer {
+    margin-block-start: 10%;
+    border-block-start: 1px solid currentColor;
+    padding: 2.5%;
+    text-align: center;
+}
+
+.footer__copyright {
+    font-size: 18px;
+}
+
+.theme_dark .colored_text::after {
+    background-image: url(../images/pattern.svg);
+}
+
+.theme_dark .header__theme_button_is_active::after {
+    background-image: url(../images/pattern.svg);
+}
+
+.theme_dark .content__text_block_type_first_lettered .content__paragraph:first-of-type::first-letter {
+    border: 1px solid currentColor;
+}
+
+.theme_dark .content__list li::before {
+    background-image: url(../images/marker-dark.svg);
+
+}
